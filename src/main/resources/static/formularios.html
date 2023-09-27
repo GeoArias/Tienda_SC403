@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section id="Contenido">   
+            <h2>Ejemplo de Formularios y sus inputs</h2>
+            <article >
+                <form action="#" method="get">
+                    <label>Button</label>: <input type="button" name="confirmar" value="Confirmar"> <br>
+                    <label>Checkbox</label>: <input type="checkbox" name="cb_terminos" > <br>
+                    <label>Color</label>: <input type="color" name="fondo" value="#98DD31"> <br>
+                    <label>Texto</label>: <input type="text" name="nombre" placeholder="Digite su nombre" maxlength="10" required> <br>
+                    <label>Texto Largo</label>: <textarea name="description" rows="7" cols="50" placeholder="Please detail here your description" style="resize: none"></textarea> <br>
+            
+                    <label>Fecha</label>: <input type="date" name="date" min="2021-01-01" max="2024-01-01" required step="5"> <br>
+                    <label>Fecha y Hora</label>: <input type="datetime-local" name="datetime" required > <br>
+                    <label>Hora</label>: <input type="time" name="time"  required step="50"> <br>
+                    <label>Email</label>: <input type="email" name="email" placeholder="xx@fasf.com" required> <br>
+                    <label>File</label>: <input type="file" name="file" required accept="images/*" multiple > <br>
+                    <label>Hidden</label>: <input type="hidden" name="hidden" value="fasfas-fasasf"> <br>
+                    
+                    <label>Search</label>: <input type="search" name="search" > <br>
+                    <label>Tel</label>: <input type="tel" name="tel" > <br>
+                    <label>Url</label>: <input type="url" name="url" > <br>
+                   
+                    <label>Week</label>: <input type="week" name="week" > <br>
+                   
+                    <label>Month</label>: <input type="month" name="year" > <br>
+                    <label>Número</label>: <input type="number" name="numero" > <br>
+                    <label>Password</label>: <input type="password" name="password" > <br>
+                    
+                    <label>Radio de idioma</label>: <br />
+                    - Inglés<input type="radio" name="Lenguaje" value="1"> <br />
+                    - Español<input type="radio" name="Lenguaje" value="2"> <br>
+                    - Francés<input type="radio" name="Lenguaje" value="3"> <br>
+                    
+                    <label>Rango</label>: <input type="range" value="24" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+                    <output>24 </output> <br>
+                    
+                    <label>Reset: </label>: <input type="reset" name="reset" > <br>
+                    <label>Submit </label>: <input type="submit" name="submit" > <br>
+                   
+                    
+                </form>
+            </article>
+        </section>
+        <br>
+        <footer>Derechos reservados &COPY;2023</footer>
+    </body>
+</html>

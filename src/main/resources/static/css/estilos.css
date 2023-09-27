@@ -1,4 +1,4 @@
-#encabezado {
+/*#encabezado {
     color: blueviolet;
     font-weight: bold;
 }
@@ -38,4 +38,36 @@ p:nth-child(odd){
 }
 p:nth-child(even){
     background-color: seagreen
+}*/
+
+
+/* ********************************************   */
+
+#barraLateral {
+    position: absolute;
+    height: 81%;
+    top: 12%;
+    left: 0;
+    width: 20%;
+    background-color: burlywood;
+    padding: 1%;
+}
+
+#contenido{
+    position: absolute;
+    height: 81%;
+    top: 12%;
+    left: 20%;
+    width: 80%;
+    background-color: beige;
+    padding: 1%;
+}
+#footer {
+    position: absolute;
+    height: 7%;
+    top: 93%;
+    left: 0;
+    width: 100%;
+    background-color: olive;
+    padding: 1%;
 }
