@@ -50,7 +50,7 @@
                                 <div class="mb-3">
                                     <label for="imagen">[[#{categoria.rutaImagen}]]</label>
                                     <input class="form-control" type="file" name="imagenFile" onchange="readURL(this);"/>
-                                    <img id="blah" src="#" alt="your image" height="200"/>
+                                    <br> <img id="blah" src="#" alt="your image" height="200"/>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -126,7 +126,7 @@
                           enctype="multipart/form-data">
                         <input type="hidden" name="idCategoria" th:field="*{idCategoria}"/>
                         <input type="hidden" name="rutaImagen" th:field="*{rutaImagen}"/>
-                        <section th:replace="~{categoria/fragmentos :: botonesEditar}"/>
+                        <section th:replace="~{categoria/fragmentosCategoria :: botonesEditar}"/>
                         <div id=details>
                             <div class="container">
                                 <div class="row">
@@ -154,6 +154,7 @@
                                                     <label for="imagen">[[#{categoria.rutaImagen}]]</label>
                                                     <input class="form-control" type="file" name="imagenFile"
                                                            onchange="readURL(this);" />
+                                                    <br>
                                                     <img id="blah" th:src="@{${categoria.rutaImagen}}" alt="your image" height="200"/>
                                                 </div>
                                             </div>
