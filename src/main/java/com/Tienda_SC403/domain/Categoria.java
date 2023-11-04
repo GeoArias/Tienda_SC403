@@ -1,12 +1,8 @@
 package com.Tienda_SC403.domain;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 import lombok.Data;
 
 @Data
@@ -23,6 +19,10 @@ public class Categoria implements Serializable{
     private String descripcion;
     private String rutaImagen;
     private boolean activo;
+    
+    @OneToMany
+    @JoinColumn(name="id_categoria", insertable = false, updatable = false)
+    List<Producto> productos;
     
     public Categoria() {}
 
