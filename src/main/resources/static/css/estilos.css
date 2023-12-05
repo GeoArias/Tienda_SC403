@@ -1,4 +1,5 @@
-/*#encabezado {
+/*
+#encabezado {
     color: blueviolet;
     font-weight: bold;
 }
@@ -24,7 +25,7 @@ a:link{
     color: white;
 }
 a:visited{
-    background-color: green;
+    background-color: violet;
     color: white;
 }
 
@@ -33,24 +34,30 @@ a:hover {
     color: white;
 }
 
+a:active {
+    background-color: red;
+    color: white;
+}
+
 p:nth-child(odd){
-    background-color: darksalmon
+    background-color: darksalmon;
 }
 p:nth-child(even){
-    background-color: seagreen
+    background-color: cadetblue;
 }*/
 
+/*
+*********************
+*/
 
-/* ********************************************   */
-
-#barraLateral {
+#barralateral{
     position: absolute;
     height: 81%;
     top: 12%;
     left: 0;
     width: 20%;
     background-color: burlywood;
-    padding: 1%;
+    padding: 10px;
 }
 
 #contenido{
@@ -58,16 +65,18 @@ p:nth-child(even){
     height: 81%;
     top: 12%;
     left: 20%;
-    width: 80%;
+    width: 80%;  
     background-color: beige;
-    padding: 1%;
+    padding: 10px;
 }
-#footer {
+
+#piePagina{
     position: absolute;
     height: 7%;
-    top: 93%;
-    left: 0;
-    width: 100%;
+    bottom: 0;
+    left: 0%;
+    width: 100%;  
     background-color: olive;
-    padding: 1%;
+    text-align: center;
+    padding-top: 25px;
 }
